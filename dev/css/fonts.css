@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    src: url('../fonts/Myriad Pro Regular/MyriadPro-Regular.eot');
+    src: url('../fonts/Myriad Pro Regular/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Myriad Pro Regular/MyriadPro-Regular.woff') format('woff'),
+    url('../fonts/Myriad Pro Regular/MyriadPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}   .box-name {font-family: 'Myriad Pro Regular';}
+
+@font-face {
+    font-family: 'Myriad Pro Bold';
+    src: url('../fonts/Myriad Pro Bold/MyriadPro-Bold.eot');
+    src: url('../fonts/Myriad Pro Bold/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Myriad Pro Bold/MyriadPro-Bold.woff') format('woff'),
+    url('../fonts/Myriad Pro Bold/MyriadPro-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}  .box-name {font-family: 'Myriad Pro Bold';}
+
+@font-face {
+    font-family: 'Myriad Pro Regular Condensed';
+    src: url('../fonts/Myriad Pro Condensed/MyriadPro-Cond.eot');
+    src: url('../fonts/Myriad Pro Condensed/MyriadPro-Cond.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Myriad Pro Condensed/MyriadPro-Cond.woff') format('woff'),
+    url('../fonts/Myriad Pro Condensed/MyriadPro-Cond.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

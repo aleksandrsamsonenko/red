@@ -1,0 +1,71 @@
+/*--------------------------------------/
+ Here you can pass number value (480)
+ or breakpoint string (xs) according to
+ $grid-breakpoints variables.
+--------------------------------------*/
+
+@mixin media($size){
+
+    @if type_of($size) == 'string'{
+        $value: map-get($grid-breakpoints, $size);
+        @media screen and (max-width: $value){
+            @content;
+        }
+    } @else{
+        @media screen and (max-width: #{$size}px){
+            @content;
+        }
+    }
+}
+
+@mixin media-exact($size){
+
+    @if type_of($size) == 'string'{
+        $value: map-get($grid-breakpoints, $size);
+        @media screen and (width: $value){
+            @content;
+        }
+    } @else{
+        @media screen and (width: #{$size}px){
+            @content;
+        }
+    }
+}
+
+@mixin media-min($size){
+
+    @if type_of($size) == 'string'{
+        $value: map-get($grid-breakpoints, $size);
+        @media screen and (min-width: $value + 1px){
+            @content;
+        }
+    } @else{
+        @media screen and (min-width: #{$size}px){
+            @content;
+        }
+    }
+}
+
+@mixin media-range($min-size, $max-size) {
+    $min-value: map-get($grid-breakpoints, $min-size);
+    $max-value: map-get($grid-breakpoints, $max-size);
+
+    @if $min-value != null and $max-value != null {
+        @media (max-width: $max-value) and (min-width: $min-value + 1px) {
+            @content;
+        }
+    } @else if $max-value == null {
+        @media (max-width: #{$max-size}px) and (min-width: $min-value + 1px) {
+            @content;
+        }
+    } @else if $min-value == null {
+        @media (max-width: $max-value) and (min-width: #{$min-size}px + 1px) {
+            @content;
+        }
+    } @else {
+        @media (max-width: #{$max-size}px) and (min-width: #{$min-size}px + 1px) {
+            @content;
+        }
+    }
+}
+

@@ -1,0 +1,77 @@
+body{
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    background: $light;
+    font-family: $text-family;
+    font-size: $base-font-size;
+    color: $base-color;
+    min-width: 320px;
+}
+
+.wrapper {
+    padding-top: $header-height; //if sticky header
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    min-height: 100vh;
+    height: 1px;
+}
+
+
+.container{
+    width: $container-width;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/*--------------------------------------/
+ Padding gap
+--------------------------------------*/
+
+.p-gap{
+    padding-top: $padding-gap;
+    padding-bottom: $padding-gap;
+
+    @include media(md){
+        padding-top: $padding-gap - 10px;
+        padding-bottom: $padding-gap - 10px;
+    }
+
+    @include media(sm){
+        padding-top: $padding-gap - 20px;
+        padding-bottom: $padding-gap - 20px;
+    }
+
+    @include media(xs){
+        padding-top: $padding-gap - 30px;
+        padding-bottom: $padding-gap - 30px;
+    }
+}
+
+/*--------------------------------------/
+ Margin gap
+--------------------------------------*/
+
+.m-gap{
+    margin-top: $margin-gap;
+    margin-bottom: $margin-gap;
+
+    @include media(md){
+        margin-top: $margin-gap - 10px;
+        margin-bottom: $margin-gap - 10px;
+    }
+
+    @include media(sm){
+        margin-top: $margin-gap - 20px;
+        margin-bottom: $margin-gap - 20px;
+    }
+
+    @include media(sm){
+        margin-top: $margin-gap - 30px;
+        margin-bottom: $margin-gap - 30px;
+    }
+}

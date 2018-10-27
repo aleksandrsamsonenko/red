@@ -1,0 +1,70 @@
+/*--------------------------------------/
+ Base
+--------------------------------------*/
+$container-width: 1200px;
+$header-height: 80px;
+$padding-gap: 50px;
+$margin-gap: 50px;
+
+/*--------------------------------------/
+ Colors
+--------------------------------------*/
+$light: #fff;
+$black: #000000;
+$dark: #262A2C;
+$gray-light: #f1f1f1;
+$gray: #e6e6e6;
+$green: #50e3c2;
+$blue: #4a90e2;
+$purple: #bd10e0;
+$orange: #ff8d46;
+$red: #dc4848;
+
+$base-color: $black;
+
+/*--------------------------------------/
+ Font size
+--------------------------------------*/
+$base-font-size: 14px;
+$small-font-size: 13px;
+$large-font-size: 17px;
+$button-font-size: 14px;
+
+/*--------------------------------------/
+ Fonts
+--------------------------------------*/
+$MyriadPro: 'Myriad Pro', sans-serif;
+
+$fa-family: 'FontAwesome', sans-serif;
+$text-family: $MyriadPro;
+$heading-family: $MyriadPro;
+
+/*--------------------------------------/
+ Grid
+--------------------------------------*/
+$grid-columns: 12 !default;
+$grid-gutter-width-base: 30px !default;
+$grid-breakpoints: (
+    wide: 0px,
+    xl: 1280px,
+    lg: 1024px,
+    md: 860px,
+    sm: 640px,
+    xs: 480px
+) !default;
+
+$grid-gutter-widths: (
+    wide: $grid-gutter-width-base,
+    xl: $grid-gutter-width-base,
+    lg: $grid-gutter-width-base / 1.5,
+    md: $grid-gutter-width-base / 1.5,
+    sm: $grid-gutter-width-base / 2,
+    xs: $grid-gutter-width-base / 3
+) !default;
+
+/*--------------------------------------/
+ Path
+--------------------------------------*/
+$image-path: '../img/';
+$font-path: '../fonts/';
+
